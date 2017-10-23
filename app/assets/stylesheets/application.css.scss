@@ -45,9 +45,20 @@ h1, h2, h3 {
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-weight: bold;
-  &:hover {
+  &:hover, &:focus {
     color: white;
     opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #fc4a1a;
   }
 }
 
