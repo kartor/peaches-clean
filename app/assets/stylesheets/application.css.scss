@@ -37,10 +37,14 @@ h1, h2, h3 {
   border: none;
 }
 
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+}
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-	font-family: 'Lobster', cursive;
   color: white;
+  font-weight: bold;
   &:hover {
     color: white;
     opacity: 0.75;
