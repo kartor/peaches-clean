@@ -35,6 +35,7 @@ h1, h2, h3 {
 // Nav Styles
 .navbar {
   border: none;
+  margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -64,16 +65,12 @@ h1, h2, h3 {
 
 // Home Page Styles
 .cover-container {
+  padding-top: 1px;
   height: 100%;
   vertical-align: middle;
   margin-right: auto;
   margin-left: auto;
-}
-
-.home-callout {
   color: white;
-  margin-top: -20px;
-  padding: 1% 25% 10% 25%;
 }
 
 .alert-notice {
@@ -117,4 +114,14 @@ footer a {
     color: orange;
     opacity: 0.80;
   }
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid #bfbfbf;
+}
+
+.license {
+  float: right;
 }

@@ -14,6 +14,7 @@
   <body>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -25,20 +26,29 @@
             Peaches & Clean
           <% end %>
         </div>
+
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <!--
             <li><%= link_to "About", about_url %></li>
-            <li><%= link_to "Contact", new_contact_url %></li>
+            -->
+            <li><a href="//peachesandclean.net/contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+            <!--
+            <%= link_to "Contact", new_contact_url %>
             <% if user_signed_in? %>
               <li><%= link_to "Log Out", destroy_user_session_url, method: :delete %></li>
             <% else %>
               <li><%= link_to "Log In", new_user_session_url %></li>
               <li><%= link_to "Sign Up", new_user_registration_url %></li>
             <% end %>
+          -->
+            <li>
+              <a href="tel:6612413335"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 661-241-3335</a>
+            </li>
           </ul>
-
         </div><!-- /.navbar-collapse -->
-      </div>
+      
+      </div><!-- navbar container -->
     </nav>
   
     <div class="container">
@@ -47,17 +57,11 @@
       <% end %>
     </div>
     
-    <%= yield %>    
+    <%= yield %>
   
-
-
     <footer class="footer">
       <div class="container">
-
-        
-
-        <p class="copyright text-center">© 2017 <strong><%= link_to "Peaches & Clean", root_url %></strong></p>
-         
+        <p class="copyright text-center">© 2017 <strong><%= link_to "Peaches & Clean", root_url %></strong><span class="license">Lic. # 151614</span></p>
       </div>
     </footer>
 
