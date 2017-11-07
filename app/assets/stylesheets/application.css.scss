@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Typography Styles
+h1, h2, h3 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+// Background Gradient
+.navbar, .home-callout, .cover-container {
+	/* Gradient provided by @_ighosh at uiGradients.com */
+	background: #fc4a1a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// Nav Styles
+.navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: bold;
+  &:hover, &:focus {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #fc4a1a;
+  }
+}
+
+// Home Page Styles
+.cover-container {
+  padding-top: 1px;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+.alert-notice {
+  position: absolute;
+  color: white;
+}
+
+.alert-alert {
+  position: absolute;
+  color: white;
+}
+
+.brand {
+  font-family: 'Lobster', cursive;
+}
+
+.home-button,
+.home-button > a {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  &:hover, &:focus {
+    color: white;
+    border-color: white;
+    outline-color: white;
+    opacity: 0.75;
+  }
+}
+
+.well {
+  background-color: transparent;
+  border-color: white;
+}
+
+//footer
+.footer .copyright {
+  line-height: 30px;
+  margin: 25px 0;
+}
+
+footer a {
+  font-family: 'Lobster', cursive;
+  color: orange;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: orange;
+    opacity: 0.80;
+  }
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid #bfbfbf;
+}
+
+.license {
+  float: right;
+}
